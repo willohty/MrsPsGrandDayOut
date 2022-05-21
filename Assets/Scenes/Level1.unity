@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6743336, g: 0.7778377, b: 0.78887755, a: 1}
+  m_IndirectSpecularColor: {r: 0.49410856, g: 0.6333018, b: 0.72156674, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -679,7 +679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.57
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -687,7 +687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -744,7 +744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.75
+      value: 3.67
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1144,6 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collectables: {fileID: 969290900}
+  countjars: {fileID: 969290902}
 --- !u!65 &684399153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1263,7 +1264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.43
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1271,7 +1272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2055,7 +2056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.81
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2063,7 +2064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.27
+      value: -2.53
       objectReference: {fileID: 0}
     - target: {fileID: 273957028670816989, guid: 00322d28d1476154fadab2e772ee076d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4065,7 +4066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06223a9d88648c64ab3001ea6cf3cf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Collectables: {fileID: 969290900}
+  collect: {fileID: 969290900}
+  countjars: {fileID: 969290902}
   haveNo: {fileID: 917903979}
   haveYes: {fileID: 1615270609}
   persistantQuit: {fileID: 1673523543}

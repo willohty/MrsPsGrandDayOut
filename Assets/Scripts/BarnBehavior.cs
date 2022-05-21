@@ -6,6 +6,7 @@ public class BarnBehavior : MonoBehaviour
 {
     private Animator anim;
     public Collectables Collectables;
+    public CountAmountJars countjars;
 
     void Start()
     {
@@ -17,7 +18,7 @@ public class BarnBehavior : MonoBehaviour
 
     void Update()
     {
-        if (Collectables.collectedCollectables == 6)
+        if (Collectables.collectedCollectables == countjars.startAmountofJars)
         {
 
             anim.SetBool("toOpen", true);

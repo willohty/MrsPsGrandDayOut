@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class EnterGoalZone : MonoBehaviour
 {
     //The following is for updating the UI
-    public Collectables Collectables;
+    public Collectables collect;
+    public CountAmountJars countjars;
     public GameObject haveNo;
     public GameObject haveYes;
     public GameObject persistantQuit;
@@ -29,7 +30,7 @@ public class EnterGoalZone : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //NOT A VICTORY
-        if (Collectables.collectedCollectables < 6)
+        if (collect.collectedCollectables < countjars.startAmountofJars)
         {
             if (other.tag == "Player")
             {
