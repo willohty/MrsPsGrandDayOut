@@ -7,6 +7,7 @@ public class EnterGoalZone : MonoBehaviour
 {
     //The following is for updating the UI
     public Collectables collect;
+    public VersionAction versaction;
     public CountAmountJars countjars;
     public GameObject haveNo;
     public GameObject haveYes;
@@ -41,9 +42,13 @@ public class EnterGoalZone : MonoBehaviour
         //VICTORY AREA
         else
         {
+            if (versaction.quitIsPresent)
+            {
+                persistantQuit.SetActive(false);
+                winQuit.SetActive(true);
+            }
             haveYes.SetActive(true);
-            persistantQuit.SetActive(false);
-            winQuit.SetActive(true);
+           
             victorysound.Play();
 
             timer.TimerStop();

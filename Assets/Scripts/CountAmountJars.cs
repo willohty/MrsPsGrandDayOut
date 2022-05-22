@@ -9,11 +9,11 @@ public class CountAmountJars : MonoBehaviour
     public int startAmountofJars;
     public int currentAmountofJars;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         startListJars = GameObject.FindGameObjectsWithTag("Jar");
-        startAmountofJars = startListJars.Length;
-        print(startAmountofJars);
+        updateStartAmount(startListJars.Length);
+        
     }
 
     // Update is called once per frame
@@ -21,5 +21,19 @@ public class CountAmountJars : MonoBehaviour
     {
         currentListJars = GameObject.FindGameObjectsWithTag("Jar");
         currentAmountofJars = currentListJars.Length;
+    }
+
+    private void updateStartAmount(int given)
+    {
+        startAmountofJars = given;
+    }
+    public int returnStartAmount()
+    {
+        return startAmountofJars;
+    }
+
+    public int returnCurrentAmount()
+    {
+        return currentAmountofJars;
     }
 }
